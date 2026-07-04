@@ -113,28 +113,30 @@ export default function Home() {
       {/* ===== Hero ===== */}
       <section className="relative h-[520px] md:h-[640px] flex items-center justify-center overflow-hidden">
         <img
-          src="https://readdy.ai/api/search-image?query=Authentic%20Italian%20Neapolitan%20pizza%20fresh%20out%20of%20wood%20fired%20oven%20with%20bubbly%20charred%20crust%20melted%20buffalo%20mozzarella%20fresh%20basil%20leaves%20San%20Marzano%20tomato%20sauce%20rustic%20wooden%20peel%20warm%20golden%20hour%20lighting%20flour%20dust%20on%20dark%20slate%20countertop%20editorial%20food%20photography%20dramatic%20shadows%20cinematic%20mood&width=1920&height=1080&seq=hero-milano-2026&orientation=landscape"
+          src="https://storage.readdy-site.link/project_files/2f864ff7-e4d2-4720-904f-aaee88750e38/7cfe21ec-bf8f-4b3b-a0d4-2d1847789d70_compressed_WhatsApp-Image-2026-07-02-at-19.33.32.webp?__preview_ts=2026-07-02T16%3A40%3A27.420692Z"
           alt={t('heroImageAlt')}
           className="absolute inset-0 w-full h-full object-cover object-top"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground-950/55 via-foreground-950/35 to-foreground-950/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/35 to-black/70" />
         <div className="relative z-10 w-full text-center px-4 max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-background-50/15 backdrop-blur-sm border border-background-50/20 mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 border border-white/20 mb-6">
             <span className="w-2 h-2 rounded-full bg-accent-500 animate-pulse" />
-            <span className="text-xs text-background-50/90 font-medium">
+            <span className="text-xs text-white font-medium">
               {t('nowDeliveringAllAcross')}
             </span>
           </div>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-background-50 font-heading leading-tight mb-3">
-            {t('tasteThe')} <span className="text-accent-400">{t('tradition')}</span>
-          </h1>
-          <p className="text-sm md:text-lg text-background-100/90 max-w-xl mx-auto mb-8 leading-relaxed">
-            {t('heroDesc')}
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <div className="inline-block rounded-3xl bg-black/70 px-6 py-5">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-[0_25px_30px_rgba(0,0,0,0.55)] font-heading leading-tight mb-4">
+              {t('tasteThe')} <span className="text-amber-300">{t('tradition')}</span>
+            </h1>
+            <p className="text-sm md:text-lg text-white/95 drop-shadow-[0_18px_25px_rgba(0,0,0,0.45)] max-w-xl mx-auto mb-8 leading-relaxed">
+              {t('heroDesc')}
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-6">
             <Link
               to="/menu"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-accent-500 text-background-50 rounded-md font-semibold text-sm hover:bg-accent-600 transition-all duration-200 active:scale-[0.98] whitespace-nowrap"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-accent-500 text-white rounded-md font-semibold text-sm hover:bg-accent-600 transition-all duration-200 active:scale-[0.98] whitespace-nowrap"
             >
               <i className="ri-restaurant-line text-lg w-5 h-5 flex items-center justify-center" />
               {t('orderNow')}
