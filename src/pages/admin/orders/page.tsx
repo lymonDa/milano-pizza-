@@ -5,11 +5,11 @@ import { useCart } from '@/contexts/CartContext';
 import { useAuth } from '@/hooks/useAuth';
 import { supabase } from '@/lib/supabase';
 import { Button } from '@/components/base/Button';
-import { StepIndicator } from './components/StepIndicator';
-import { ReviewStep } from './components/ReviewStep';
-import { AddressStep } from './components/AddressStep';
-import { PaymentStep } from './components/PaymentStep';
-import { OrderConfirmationModal } from './components/OrderConfirmationModal';
+import { StepIndicator } from '../../checkout/components/StepIndicator';
+import { ReviewStep } from '../../checkout/components/ReviewStep';
+import { AddressStep } from '../../checkout/components/AddressStep';
+import { PaymentStep } from '../../checkout/components/PaymentStep';
+import { OrderConfirmationModal } from '../../checkout/components/OrderConfirmationModal';
 
 interface AddressFormData {
   fullName: string;
